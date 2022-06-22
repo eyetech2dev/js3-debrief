@@ -17,3 +17,20 @@
 // b) add a method called displayInfo that console.logs the properties
 // c) Using this class, create a new instance (object) with the values of the object we made above
 // d) call this Instance's (this new object created from the template) displayInfo();
+
+// Objects Exercise 1
+
+const school = {
+    name: "Hogwarts",
+    location: "Unknown",
+    established: "the 10th Century",
+    displayInfo(){
+        console.log(`My school ${this.name} was established in ${this.established} at ${this.location}.`)
+    }
+}
+console.log(school.name);
+school.displayInfo();
+
+// Classes Exercise 1
+
+
