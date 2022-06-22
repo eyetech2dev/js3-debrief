@@ -24,7 +24,7 @@ const school = {
     name: "Hogwarts",
     location: "Unknown",
     established: "the 10th Century",
-    displayInfo(){
+    displayInfo() {
         console.log(`My school ${this.name} was established in ${this.established} at ${this.location}.`)
     }
 }
@@ -33,4 +33,17 @@ school.displayInfo();
 
 // Classes Exercise 1
 
+class CreateSchool {
+    constructor(name, location, established) {
+        this.name = name;
+        this.location = location;
+        this.established = established;
+    }
+    displayInfo(){
+        console.log(`My school ${this.name} was established in ${this.established} at ${this.location}.`)
+    }
+}
 
+const genAusSchool = new CreateSchool("Generation Australia", "Australia", "2020");
+console.log(genAusSchool);
+genAusSchool.displayInfo();
